@@ -55,6 +55,12 @@ app.get('/projects', (req, res) =>{
     });
 });
 
+app.get('/actors', (req,res) => {
+res.render('actors.hbs', {
+    pageTitle: 'Actors',
+})
+});
+
 app.get('/bad', (req,res) => {
     res.send({
         errorMessage: 'unable to ahndele'
